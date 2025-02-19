@@ -18,7 +18,7 @@ spec:
       - name: vivekanand-portfoilo-container
         image: vivekguatam07/mywebapp:latest
         ports:
-        - containerPort: 8080
+        - containerPort: 8289
 ---
 apiVersion: v1
 kind: Service
@@ -33,5 +33,5 @@ spec:
   type: NodePort
   ports:
   - nodePort: 31028
-    port: 8080
-    targetPort: 8080
+    port: 8289
+    targetPort: 8289
